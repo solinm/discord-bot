@@ -11,7 +11,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     
-    if message.content == "hello" or message.content == "hey" or message.content == "hi":
-        await message.channel.send("Hi!")
+    if message.content.lower() == "hello" or message.content.lower() == "hey" or message.content.lower() == "hi":
+        await message.channel.send("hi!")
 
 client.run("OTA1OTI3MzMzNzA4NDQzNjU4.YYRMkw.hLmaACAG7SQhiPc_qoVVQk_IoNU")
